@@ -1,1 +1,73 @@
 ﻿
+<!doctype html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>UKOS – Bash</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+<header>
+    <h1>UKOS – Podstawy Bash</h1>
+    <nav aria-label="Główna nawigacja">
+        <a href="../index.html">Start</a>
+        <a href="bash.html">Bash</a>
+        <a href="git.html">Git</a>
+        <a href="dotnet-cli.html">.NET CLI</a>
+    </nav>
+</header>
+
+<main>
+    <section>
+        <h2>Wprowadzenie</h2>
+        <p>Bash to powłoka umożliwiająca wykonywanie poleceń w terminalu.</p>
+
+        <h3>Zasady bezpiecznej pracy</h3>
+        <ul>
+            <li>Sprawdzaj bieżący katalog przed usuwaniem plików.</li>
+            <li>Uważaj na polecenie <code>rm</code>.</li>
+            <li>Sprawdzaj ścieżki przed kopiowaniem i przenoszeniem.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Najważniejsze komendy</h2>
+        <div class="table-scroll">
+            <table class="command-table">
+                <caption>Podstawowe polecenia Bash</caption>
+                <thead>
+                <tr>
+                    <th scope="col">Polecenie</th>
+                    <th scope="col">Przykład</th>
+                    <th scope="col">Opis</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr><td><code>pwd</code></td><td><code>pwd</code></td><td>Pokazuje bieżący katalog.</td></tr>
+                <tr><td><code>ls</code></td><td><code>ls -la</code></td><td>Wyświetla zawartość katalogu.</td></tr>
+                <tr><td><code>cd</code></td><td><code>cd Dokumenty</code></td><td>Zmienia katalog.</td></tr>
+                <tr><td><code>mkdir</code></td><td><code>mkdir test</code></td><td>Tworzy katalog.</td></tr>
+                <tr><td><code>touch</code></td><td><code>touch plik.txt</code></td><td>Tworzy pusty plik, jeśli nie istnieje.</td></tr>
+                <tr><td><code>cp</code></td><td><code>cp a.txt b.txt</code></td><td>Kopiuje plik.</td></tr>
+                <tr><td><code>mv</code></td><td><code>mv a.txt b.txt</code></td><td>Przenosi lub zmienia nazwę.</td></tr>
+                <tr><td><code>rm</code></td><td><code>rm plik.txt</code></td><td>Usuwa plik.</td></tr>
+                <tr><td><code>cat</code></td><td><code>cat plik.txt</code></td><td>Wyświetla zawartość pliku.</td></tr>
+                <tr><td><code>clear</code></td><td><code>clear</code></td><td>Czyści widok terminala.</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section>
+        <h2>Dokumentacja</h2>
+        <p><a href="../docs/ukos/bash.md">Oryginalna notatka Markdown</a></p>
+        <p><a href="https://www.gnu.org/software/bash/manual/">GNU Bash Manual</a></p>
+    </section>
+</main>
+
+<footer>
+    <p>Student IT Knowledge Base – projekt edukacyjny</p>
+</footer>
+</body>
+</html>
