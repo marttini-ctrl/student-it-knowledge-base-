@@ -1,1 +1,74 @@
 ﻿
+<!doctype html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PRG1 – .NET CLI</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+<header>
+    <h1>PRG1 – Podstawy .NET CLI</h1>
+    <nav aria-label="Główna nawigacja">
+        <a href="../index.html">Start</a>
+        <a href="bash.html">Bash</a>
+        <a href="git.html">Git</a>
+        <a href="dotnet-cli.html">.NET CLI</a>
+    </nav>
+</header>
+
+<main>
+    <section>
+        <h2>Wprowadzenie</h2>
+        <p>.NET CLI to narzędzie do tworzenia, kompilowania i uruchamiania aplikacji .NET.</p>
+    </section>
+
+    <section>
+        <h2>Najważniejsze polecenia</h2>
+        <div class="table-scroll">
+            <table class="command-table">
+                <caption>Polecenia .NET CLI</caption>
+                <thead>
+                <tr>
+                    <th scope="col">Polecenie</th>
+                    <th scope="col">Przykład</th>
+                    <th scope="col">Opis</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr><td><code>dotnet --version</code></td><td><code>dotnet --version</code></td><td>Pokazuje wersję SDK.</td></tr>
+                <tr><td><code>dotnet --list-sdks</code></td><td><code>dotnet --list-sdks</code></td><td>Pokazuje zainstalowane SDK.</td></tr>
+                <tr><td><code>dotnet new list</code></td><td><code>dotnet new list</code></td><td>Wyświetla szablony.</td></tr>
+                <tr><td><code>dotnet new console</code></td><td><code>dotnet new console</code></td><td>Tworzy aplikację konsolową.</td></tr>
+                <tr><td><code>dotnet restore</code></td><td><code>dotnet restore</code></td><td>Przywraca zależności.</td></tr>
+                <tr><td><code>dotnet build</code></td><td><code>dotnet build</code></td><td>Kompiluje projekt.</td></tr>
+                <tr><td><code>dotnet run</code></td><td><code>dotnet run</code></td><td>Uruchamia projekt.</td></tr>
+                <tr><td><code>dotnet clean</code></td><td><code>dotnet clean</code></td><td>Usuwa pliki kompilacji.</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section>
+        <h2>Tworzenie aplikacji krok po kroku</h2>
+        <pre><code>dotnet new console -n MyApp
+cd MyApp
+dotnet restore
+dotnet build
+dotnet run
+dotnet clean</code></pre>
+    </section>
+
+    <section>
+        <h2>Dokumentacja</h2>
+        <p><a href="../docs/prg1/dotnet-cli.md">Oryginalna notatka Markdown</a></p>
+        <p><a href="https://learn.microsoft.com/dotnet/core/tools/">Dokumentacja .NET CLI</a></p>
+    </section>
+</main>
+
+<footer>
+    <p>Student IT Knowledge Base – projekt edukacyjny</p>
+</footer>
+</body>
+</html>
