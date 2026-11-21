@@ -1,1 +1,84 @@
 ﻿
+<!doctype html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WARP – Git i GitHub</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+<header>
+    <h1>WARP – Git i GitHub</h1>
+    <nav aria-label="Główna nawigacja">
+        <a href="../index.html">Start</a>
+        <a href="bash.html">Bash</a>
+        <a href="git.html">Git</a>
+        <a href="dotnet-cli.html">.NET CLI</a>
+    </nav>
+</header>
+
+<main>
+    <section>
+        <h2>Wprowadzenie</h2>
+        <p>Git to system kontroli wersji, a GitHub to platforma do przechowywania repozytoriów i współpracy.</p>
+    </section>
+
+    <section>
+        <h2>Najważniejsze komendy</h2>
+        <div class="table-scroll">
+            <table class="command-table">
+                <caption>Podstawowe polecenia Git</caption>
+                <thead>
+                <tr>
+                    <th scope="col">Polecenie</th>
+                    <th scope="col">Przykład</th>
+                    <th scope="col">Opis</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr><td><code>git clone</code></td><td><code>git clone URL</code></td><td>Klonuje repozytorium.</td></tr>
+                <tr><td><code>git status</code></td><td><code>git status</code></td><td>Sprawdza stan zmian.</td></tr>
+                <tr><td><code>git add</code></td><td><code>git add .</code></td><td>Przygotowuje zmiany.</td></tr>
+                <tr><td><code>git commit</code></td><td><code>git commit -m "Opis"</code></td><td>Zapisuje commit.</td></tr>
+                <tr><td><code>git push</code></td><td><code>git push</code></td><td>Wysyła commity.</td></tr>
+                <tr><td><code>git pull</code></td><td><code>git pull</code></td><td>Pobiera i integruje zmiany.</td></tr>
+                <tr><td><code>git fetch</code></td><td><code>git fetch</code></td><td>Pobiera informacje o zmianach.</td></tr>
+                <tr><td><code>git branch</code></td><td><code>git branch</code></td><td>Pokazuje gałęzie.</td></tr>
+                <tr><td><code>git switch</code></td><td><code>git switch main</code></td><td>Przełącza gałąź.</td></tr>
+                <tr><td><code>git log</code></td><td><code>git log --oneline</code></td><td>Wyświetla historię commitów.</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section>
+        <h2>Przykładowa procedura pracy</h2>
+        <ol>
+            <li>Zsynchronizuj lokalną gałąź main.</li>
+            <li>Utwórz nowy branch.</li>
+            <li>Zmodyfikuj pliki.</li>
+            <li>Wykonaj commit.</li>
+            <li>Wyślij branch na GitHub.</li>
+            <li>Utwórz Pull Request.</li>
+        </ol>
+        <pre><code>git switch main
+git pull --ff-only origin main
+git switch -c feature/zmiana
+git add .
+git commit -m "Opis zmian"
+git push -u origin feature/zmiana</code></pre>
+    </section>
+
+    <section>
+        <h2>Dokumentacja</h2>
+        <p><a href="../docs/warp/git.md">Oryginalna notatka Markdown</a></p>
+        <p><a href="https://git-scm.com/doc">Oficjalna dokumentacja Git</a></p>
+    </section>
+</main>
+
+<footer>
+    <p>Student IT Knowledge Base – projekt edukacyjny</p>
+</footer>
+</body>
+</html>
